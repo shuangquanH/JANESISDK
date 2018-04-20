@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'JANESISDK_Example' do
+  pod 'JANESISDK', :path => '../'
+
+  target 'JANESISDK_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
