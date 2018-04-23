@@ -40,6 +40,7 @@
     
 }
 + (UIImage *)loadLocalBundleImg:(NSString *)imageName{
+
     NSBundle    *bundle = [NSBundle bundleForClass:self];
     
 #if __IPHONE_OS_VERSION_MIN_REQUIRED >= __IPHONE_8_0
@@ -56,6 +57,15 @@
     
 }
 
++ (NSBundle *)my_myLibraryBundle {
+    return [NSBundle bundleWithURL:[self my_myLibraryBundleURL]];
+}
+
+
++ (NSURL *)my_myLibraryBundleURL {
+    NSBundle *bundle = [NSBundle bundleForClass:[self class]];
+    return [bundle URLForResource:@"JSCOVERIMG" withExtension:@"bundle"];
+}
 
 
 

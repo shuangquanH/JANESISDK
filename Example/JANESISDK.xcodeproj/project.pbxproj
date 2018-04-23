@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		182A7F4A208D93AF009B244B /* libJSCOVERSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 182A7F49208D93AF009B244B /* libJSCOVERSDK.a */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -37,6 +38,8 @@
 
 /* Begin PBXFileReference section */
 		007C72AEB1626F96F9B71A0F /* Pods-JANESISDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JANESISDK_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JANESISDK_Tests/Pods-JANESISDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		182A7F48208D93AF009B244B /* JANESISDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JANESISDK.h; sourceTree = "<group>"; };
+		182A7F49208D93AF009B244B /* libJSCOVERSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libJSCOVERSDK.a; sourceTree = "<group>"; };
 		383D1A37C6DC7B0183FE8C1B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		38711EEBC447E4F09EC95B03 /* Pods_JANESISDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JANESISDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4613F8E99C51544984FF3463 /* Pods-JANESISDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JANESISDK_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JANESISDK_Tests/Pods-JANESISDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -76,6 +79,7 @@
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
 				8AD39C1599EF047FDE1F9464 /* Pods_JANESISDK_Example.framework in Frameworks */,
+				182A7F4A208D93AF009B244B /* libJSCOVERSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,6 +138,8 @@
 				6003F59D195388D20070C39A /* JSAppDelegate.m */,
 				6003F5A5195388D20070C39A /* JSViewController.h */,
 				6003F5A6195388D20070C39A /* JSViewController.m */,
+				182A7F48208D93AF009B244B /* JANESISDK.h */,
+				182A7F49208D93AF009B244B /* libJSCOVERSDK.a */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
