@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'JANESISDK'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'A short description of JANESISDK.'
 
 # This description is used to generate tags and improve search results.
@@ -38,7 +38,7 @@ TODO: Add long description of the pod here.
     'JANESISDK' => ['JANESISDK/Classes/Images/*.png']
   }
 
-  s.public_header_files = 'Pod/Classes/**/*.h'
+#s.public_header_files = 'Pod/Classes/**/*.h'
   s.prefix_header_file = 'JANESISDK/Classes/JSTFPrefixHeader.pch'
   
   s.frameworks = 'UIKit'

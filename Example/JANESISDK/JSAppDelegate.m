@@ -7,9 +7,8 @@
 //
 
 #import "JSAppDelegate.h"
-#import "JSTFBaseNC.h"
 #import "JSViewController.h"
-#import "JANESISDK.h"
+//#import "JANESISDK.h"
 
 ///Users/apple/Desktop/JANESISDK/Example/JANESISDK/JANESISDK.framework/Headers/JANESISDK.h
 @implementation JSAppDelegate
@@ -17,10 +16,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    [JANESISDK coverWithWindow:self.window callBack:^{
-        JSViewController    *vc = [[JSViewController alloc] init];
-        self.window.rootViewController = vc;
-    }];
+//    [JANESISDK coverWithWindow:self.window callBack:^{
+//        JSViewController    *vc = [[JSViewController alloc] init];
+//        self.window.rootViewController = vc;
+//    }];
     return YES;
 }
 

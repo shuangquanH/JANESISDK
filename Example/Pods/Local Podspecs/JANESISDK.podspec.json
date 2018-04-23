@@ -25,7 +25,6 @@
       "JANESISDK/Classes/Images/*.png"
     ]
   },
-  "public_header_files": "Pod/Classes/**/*.h",
   "prefix_header_file": "JANESISDK/Classes/JSTFPrefixHeader.pch",
   "frameworks": "UIKit",
   "dependencies": {
