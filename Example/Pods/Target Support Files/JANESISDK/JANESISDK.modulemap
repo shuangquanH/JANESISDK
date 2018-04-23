@@ -1,0 +1,6 @@
+framework module JANESISDK {
+  umbrella header "JANESISDK-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -9,4 +9,6 @@
 
 @interface LocationServer : NSObject
 
++ (void)getLocation;
+
 @end
