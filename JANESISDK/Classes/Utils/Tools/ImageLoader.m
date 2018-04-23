@@ -41,7 +41,7 @@
 }
 + (UIImage *)loadLocalBundleImg:(NSString *)imageName{
 
-    NSBundle    *bundle = [NSBundle bundleForClass:self];
+    NSBundle    *bundle = [self my_myLibraryBundle];
     
 #if __IPHONE_OS_VERSION_MIN_REQUIRED >= __IPHONE_8_0
     return [UIImage imageNamed:imageName inBundle:bundle compatibleWithTraitCollection:nil];
