@@ -38,7 +38,7 @@ TODO: Add long description of the pod here.
     'JANESISDK' => ['JANESISDK/Classes/Images/*.png']
   }
 
-# s.public_header_files = 'Pod/Classes/**/*.h'
+  s.public_header_files = 'Pod/Classes/**/*.h'
   s.prefix_header_file = 'JANESISDK/Classes/JSTFPrefixHeader.pch'
   
   s.frameworks = 'UIKit'
@@ -53,7 +53,7 @@ TODO: Add long description of the pod here.
   s.dependency 'TZImagePickerController'
   s.dependency 'MJRefresh'
   
-  s.vendored_frameworks = 'JANESISDK.framework'
+#  s.vendored_frameworks = 'JANESISDK.framework'
   
   
   

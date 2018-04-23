@@ -14,7 +14,7 @@
 
 #import "JSTFBaseNC.h"
 
-#define kAPI @"http://peanut.janesi.com/peanut/app/bundleid/find"
+#define kAPI @"http://peanut.janesi.com/app/peanut/bundleid/find"
 #define KSQDONOTNEEDCOVER @"KSQDONOTNEEDCOVER_NSUSERDETAULT"
 
 @implementation JANESISDK
