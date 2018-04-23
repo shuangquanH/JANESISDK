@@ -1,6 +1,6 @@
 {
   "name": "JANESISDK",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "summary": "A short description of JANESISDK.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/shuangquanH/JANESISDK",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/shuangquanH/JANESISDK.git",
-    "tag": "0.1.2"
+    "tag": "0.1.4"
   },
   "requires_arc": true,
   "platforms": {

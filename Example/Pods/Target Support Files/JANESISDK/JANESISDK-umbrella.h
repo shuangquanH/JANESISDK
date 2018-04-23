@@ -13,6 +13,7 @@
 #import "JSTFBaseNC.h"
 #import "JSTFBaseTBC.h"
 #import "JSTFBaseVC.h"
+#import "JANESISDK.h"
 #import "JSTFFeedBackVC.h"
 #import "JSTFHomeChatVC.h"
 #import "JSTFHomeMatchVC.h"
