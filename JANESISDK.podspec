@@ -1,53 +1,33 @@
-#
-# Be sure to run `pod lib lint JANESISDK.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
-#
 
 Pod::Spec.new do |s|
   s.name             = 'JANESISDK'
-  s.version          = '0.1.4'
+  s.version          = '0.1.5'
   s.summary          = 'A short description of JANESISDK.'
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
 TODO: Add long description of the pod here.
                        DESC
 
   s.homepage         = 'https://github.com/shuangquanH/JANESISDK'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'shuangquanH' => 'butrys@163.com' }
   s.source           = { :git => 'https://github.com/shuangquanH/JANESISDK.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.requires_arc = true
-  
   s.ios.deployment_target = '8.0'
-
   s.source_files = 'JANESISDK/Classes/**/*'
-  
-  #s.resource_bundles = {
-  #'JANESISDK' => ['JANESISDK/Classes/Images/*.png']
-  #}
-
+  #如果有bundle文件，使用这个方法导入
   s.resources    = 'JANESISDK/Classes/Images/JSCOVERIMG.bundle'
   s.requires_arc = true
-
-#s.public_header_files = 'Pod/Classes/**/*.h'
+  #如果有头文件使用这个方法导入
   s.prefix_header_file = 'JANESISDK/Classes/JSTFPrefixHeader.pch'
-  
-  
+  #  s.vendored_frameworks = 'JANESISDK.framework'
+  #系统自带库
   s.frameworks = 'UIKit'
-  s.dependency 'AFNetworking'
   
+  #依赖第三方库
+  s.dependency 'AFNetworking'
   s.dependency 'Masonry'
   s.dependency 'SDWebImage'
   s.dependency 'SVProgressHUD'
@@ -56,8 +36,6 @@ TODO: Add long description of the pod here.
   s.dependency 'SDCycleScrollView'
   s.dependency 'TZImagePickerController'
   s.dependency 'MJRefresh'
-  
-#  s.vendored_frameworks = 'JANESISDK.framework'
   
   
   

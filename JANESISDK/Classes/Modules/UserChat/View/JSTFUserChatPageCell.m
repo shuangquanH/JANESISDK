@@ -47,9 +47,10 @@
             CGFloat spacingX = 15*LayoutUtil.scaling;
             CGFloat spacingY = 12*LayoutUtil.scaling;
             NSDictionary *attributes = @{NSFontAttributeName:[UIFont systemFontOfSize:16*LayoutUtil.scaling]};
-            CGSize size = [_model.userModified boundingRectWithSize:CGSizeMake(screenWidth-(15+40+10)*LayoutUtil.scaling*2-spacingX*2, 0) options:NSStringDrawingUsesLineFragmentOrigin attributes:attributes context:nil].size;
+            CGSize size = [_model.userModified boundingRectWithSize:CGSizeMake(screenWidth-(15+40+10)*LayoutUtil.scaling*2-spacingX*2, 0) options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading attributes:attributes context:nil].size;
             
             UIImageView *imageView = [[UIImageView alloc] init];
+            imageView.contentMode = UIViewContentModeScaleAspectFill;
             [imageView.layer setCornerRadius:6*LayoutUtil.scaling];
             [imageView.layer setMasksToBounds:YES];
             if ([NSString isNotBlank:_avator]) {
@@ -77,12 +78,13 @@
             content.text = _model.userModified;
             content.textAlignment = NSTextAlignmentLeft;
             content.textColor = [UIColor colorWithHex:@"ffffff"];
+            content.font = [UIFont systemFontOfSize:16*LayoutUtil.scaling];
             [box addSubview:content];
             [content mas_makeConstraints:^(MASConstraintMaker *make) {
                 make.centerX.equalTo(box.mas_centerX);
                 make.centerY.equalTo(box.mas_centerY);
-                make.width.mas_equalTo(size.width);
-                make.height.mas_equalTo(size.height);
+                make.width.mas_equalTo(ceilf(size.width));
+                make.height.mas_equalTo(ceilf(size.height));
             }];
             self.contentLab = content;
             if (!_model.isVaild) {
@@ -104,6 +106,7 @@
             CGSize size = [_model.toUserModified boundingRectWithSize:CGSizeMake(screenWidth-(15+40+10)*LayoutUtil.scaling*2-spacingX*2, 0) options:NSStringDrawingUsesLineFragmentOrigin attributes:attributes context:nil].size;
             
             UIImageView *imageView = [[UIImageView alloc] init];
+            imageView.contentMode = UIViewContentModeScaleAspectFill;
             [imageView.layer setCornerRadius:6*LayoutUtil.scaling];
             [imageView.layer setMasksToBounds:YES];
             if ([NSString isNotBlank:_avator]) {
@@ -135,12 +138,13 @@
             content.text = _model.toUserModified;
             content.textAlignment = NSTextAlignmentLeft;
             content.textColor = [UIColor colorWithHex:@"333333"];
+            content.font = [UIFont systemFontOfSize:16*LayoutUtil.scaling];
             [box addSubview:content];
             [content mas_makeConstraints:^(MASConstraintMaker *make) {
                 make.centerX.equalTo(box.mas_centerX);
                 make.centerY.equalTo(box.mas_centerY);
-                make.width.mas_equalTo(size.width);
-                make.height.mas_equalTo(size.height);
+                make.width.mas_equalTo(ceilf(size.width));
+                make.height.mas_equalTo(ceilf(size.height));
             }];
             self.contentLab = content;
         }
